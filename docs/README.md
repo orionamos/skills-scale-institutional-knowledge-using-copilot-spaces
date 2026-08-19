@@ -2,6 +2,16 @@
 
 Welcome to the OctoAcme Project Management documentation hub. This directory contains comprehensive guidance for running projects at OctoAcme — from initiation through delivery and continuous improvement. These docs are the single source of truth for process, roles, and key artifacts used to plan, execute, and improve projects.
 
+## Process Summary
+
+OctoAcme runs projects with a clear, outcome-oriented lifecycle: Initiation, Planning, Execution, Release, and Close. Work starts with a concise Project One-pager that captures the problem, measurable success metrics, stakeholders, and a high-level timeline. Initiatives that pass the decision gate (clear metrics, stakeholder alignment, and confirmed team availability) move into planning where scope is broken into a prioritized backlog, acceptance criteria are defined, estimates are produced, and an initial risk register is created.
+
+Day-to-day execution is organized around a predictable team rhythm—short daily standups, weekly delivery syncs, and end-of-sprint demos—and a lightweight project board workflow (Backlog → Ready → In Progress → In Review → QA → Done). The pull request workflow emphasizes small, reviewable changes, linking PRs to issues and acceptance criteria, and requiring passing CI (tests, lint, security scans) plus at least one approval before merging. Dependencies are tracked on the project board and escalated during weekly syncs.
+
+Roles and responsibilities are explicit: Product Managers define outcomes and prioritize work; Project Managers coordinate delivery, manage risks, and communicate status; Developers implement features and maintain tests and docs; QA validates acceptance criteria and performs manual checks when needed; stakeholders provide inputs and approvals. These personas drive accountability for artifacts (e.g., risk owners, action owners) and determine who receives which communications and escalations.
+
+Quality assurance and releases follow checklist-driven practices to reduce risk and improve observability. Teams write unit and integration tests, run smoke tests for critical flows, and include automated security scanning in CI. Releases follow pre-release requirements (passing CI, release notes, rollback plan), deploy to staging for smoke tests, and use automated pipelines for production deploys where possible. Retrospectives convert learnings into prioritized action items that feed back into the backlog for continuous improvement.
+
 ## Quick Overview
 
 OctoAcme follows a structured, customer-first approach to project delivery that emphasizes:
